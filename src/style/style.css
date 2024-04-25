@@ -701,3 +701,56 @@ header {
   color: var(--regular-white);
   text-align: center;
 }
+
+.hero_page {
+  background: url("../img/vaoHe/hero_1.jpg") center no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 407px;
+}
+
+.hero_wrapper {
+  display: flex;
+  padding: 40px 0;
+  margin-bottom: 34px;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero_wrapper-left {
+  width: 30%;
+  overflow: hidden;
+  height: 333px;
+}
+
+.hero_wrapper-left img {
+  height: 333px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero_wrapper-right {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero_wrapper-right h3 {
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--regular-white);
+  margin-left: 10rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero_wrapper-right p {
+  color: var(--regular-white);
+  line-height: 29px;
+  margin-left: 10rem;
+  padding-right: 5rem;
+}

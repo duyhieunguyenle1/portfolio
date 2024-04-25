@@ -1,0 +1,89 @@
+.nh_main {
+  max-width: 1680px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1.25rem;
+  background-color: var(--regular-black);
+}
+
+.vaoHe_item {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.vaoHe_item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.vaoHe_item:hover::after {
+  opacity: 1;
+}
+
+.vaoHe_item4 img,
+.vaoHe_item img,
+.vaoHe_item3 img,
+.vaoHe_item2 img,
+.vaoHe_item1 img {
+  aspect-ratio: none;
+  width: 100%;
+  max-height: 470px;
+  object-fit: cover;
+}
+
+.vaoHe_item1 {
+  overflow: hidden;
+  grid-area: 1 / 1 / 1 / 5;
+  object-position: center;
+}
+
+.vaoHe_item2 {
+  overflow: hidden;
+  grid-area: 1 / 5 / 1 / 8;
+  object-position: center;
+}
+
+.vaoHe_item3 {
+  overflow: hidden;
+  grid-area: 2 / 1 / 3 / 2;
+  object-position: center;
+}
+
+.vaoHe_item4 {
+  overflow: hidden;
+  grid-area: 2 / 2 / 3 / 7;
+  object-position: center;
+}
+
+.vaoHe_item5 {
+  overflow: hidden;
+  grid-area: 2 / 7 / 3 / 8;
+  object-position: center;
+}
+
+.vaoHe_item6 {
+  overflow: hidden;
+  grid-area: 4 / 1 / 5 / 3;
+  object-position: center;
+}
+
+.vaoHe_item7 {
+  overflow: hidden;
+  grid-area: 4 / 3 / 5 / 5;
+  object-position: center;
+}
+
+.vaoHe_item8 {
+  overflow: hidden;
+  grid-area: 4 / 5 / 5 / 8;
+  object-position: center;
+}
